@@ -175,7 +175,7 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 
 
 
-![image-20220417153303002](img/image-20220417153303002.png)
+![image-20220417153303002](https://github.com/anonNo2/crosstalk-generation/blob/main/img/image-20220417153303002.png)
 
 
 
