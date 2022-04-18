@@ -137,6 +137,8 @@ GPT,T5,T5-small,unilm,rnn,GPT3
 
 CPM-large,GPT3,Pangu-a,zhouwenwang
 
+------
+
 
 
 #### 机器指标
@@ -163,6 +165,8 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 2.大多数大模型直接推理的生成显著差于finetune
 
 3.GPT3经过finetune后机器指标下降，但是在下面人工评分中，反而会获得更高的得分。（机器指标高的并不一定更符合人类的阅读习惯？）
+
+------
 
 
 
@@ -196,6 +200,8 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 2.finetune模型中，unilm以及T5相对拥有更高的创新性。
 
 3.创新性评估较高的模型，生成往往更为随机，放在人类角度去理解就是存在一些“驴唇不对马嘴”
+
+------
 
 
 
@@ -231,7 +237,7 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 
 2.UNILM及T5这类模型结构生成质量相对于GPT及RNN会有显著的提升。（在人理解及机器评估维度都是）
 
-
+------
 
 
 
