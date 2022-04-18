@@ -156,6 +156,16 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 
 
 
+**一些小发现：**
+
+1.GPT3-davinci的机器指标显著高于其他任何生成方法。
+
+2.大多数大模型直接推理的生成显著差于finetune
+
+3.GPT3经过finetune后机器指标下降，但是在下面人工评分中，反而会获得更高的得分。（机器指标高的并不一定更符合人类的阅读习惯？）
+
+
+
 #### 创新性指标：
 
 
@@ -178,6 +188,14 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 ![image-20220417153303002](https://github.com/anonNo2/crosstalk-generation/blob/main/img/image-20220417153303002.png)
 
 
+
+**一些小发现：**
+
+1.周文王，CPM，pangu-a（直接的大模型推理）相对而言具备更高的创新性。
+
+2.finetune模型中，unilm以及T5相对拥有更高的创新性。
+
+3.创新性评估较高的模型，生成往往更为随机，放在人类角度去理解就是存在一些“驴唇不对马嘴”
 
 
 
@@ -204,6 +222,16 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 | GPT3-ft200-Davinci | **341**       | **353**           | **106**         | 2           |
 | Panggu-a           | 230           | 257               | 63              | 4           |
 | zhouwenwang        | 184           | 191               | 28              | 8           |
+
+
+
+**一些小发现：**
+
+1.GPT3虽然finetune后在上文的机器指标有所下降，但人工评分各维度都范围是第一位。机器指标并不能完全评估生成效果好坏。
+
+2.UNILM及T5这类模型结构生成质量相对于GPT及RNN会有显著的提升。（在人理解及机器评估维度都是）
+
+
 
 
 
@@ -337,8 +365,7 @@ demo 3
 
 
 
-### 1.6 同context不同模型生成示例
-
+####  同context不同模型生成示例
 
 **demo 1**
 
