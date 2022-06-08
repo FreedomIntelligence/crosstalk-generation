@@ -1,0 +1,364 @@
+{
+  "RECORDS": [
+    {
+      "id": 1,
+      "user": "anon",
+      "start_idx": 1,
+      "end_idx": 5
+    },
+    {
+      "id": 23,
+      "user": "admin",
+      "start_idx": 1,
+      "end_idx": 50
+    },
+    {
+      "id": 24,
+      "user": "zxc",
+      "start_idx": 46,
+      "end_idx": 50
+    },
+    {
+      "id": 25,
+      "user": "ljq",
+      "start_idx": 6,
+      "end_idx": 10
+    },
+    {
+      "id": 26,
+      "user": "lxk",
+      "start_idx": 31,
+      "end_idx": 35
+    },
+    {
+      "id": 27,
+      "user": "waby",
+      "start_idx": 21,
+      "end_idx": 25
+    },
+    {
+      "id": 28,
+      "user": "bin",
+      "start_idx": 36,
+      "end_idx": 40
+    },
+    {
+      "id": 29,
+      "user": "yc",
+      "start_idx": 41,
+      "end_idx": 45
+    },
+    {
+      "id": 30,
+      "user": "梁小熊",
+      "start_idx": 26,
+      "end_idx": 30
+    },
+    {
+      "id": 31,
+      "user": "陈建华",
+      "start_idx": 11,
+      "end_idx": 15
+    },
+    {
+      "id": 32,
+      "user": "一笑",
+      "start_idx": 16,
+      "end_idx": 20
+    },
+    {
+      "id": 33,
+      "user": "徐晓龙",
+      "start_idx": 31,
+      "end_idx": 35
+    },
+    {
+      "id": 34,
+      "user": "木",
+      "start_idx": 46,
+      "end_idx": 50
+    },
+    {
+      "id": 35,
+      "user": "liuxl",
+      "start_idx": 16,
+      "end_idx": 20
+    },
+    {
+      "id": 36,
+      "user": "吴相博",
+      "start_idx": 21,
+      "end_idx": 25
+    },
+    {
+      "id": 37,
+      "user": "1",
+      "start_idx": 6,
+      "end_idx": 10
+    },
+    {
+      "id": 38,
+      "user": "zhan su",
+      "start_idx": 11,
+      "end_idx": 15
+    },
+    {
+      "id": 39,
+      "user": "LZY",
+      "start_idx": 26,
+      "end_idx": 30
+    },
+    {
+      "id": 40,
+      "user": "周越",
+      "start_idx": 36,
+      "end_idx": 40
+    },
+    {
+      "id": 41,
+      "user": "锻炼锻炼",
+      "start_idx": 41,
+      "end_idx": 45
+    },
+    {
+      "id": 42,
+      "user": "vv",
+      "start_idx": 41,
+      "end_idx": 45
+    },
+    {
+      "id": 43,
+      "user": "罗志国",
+      "start_idx": 6,
+      "end_idx": 10
+    },
+    {
+      "id": 44,
+      "user": "sb",
+      "start_idx": 46,
+      "end_idx": 50
+    },
+    {
+      "id": 45,
+      "user": "abcdef",
+      "start_idx": 1,
+      "end_idx": 5
+    },
+    {
+      "id": 46,
+      "user": "mu",
+      "start_idx": 31,
+      "end_idx": 35
+    },
+    {
+      "id": 47,
+      "user": "宁",
+      "start_idx": 11,
+      "end_idx": 15
+    },
+    {
+      "id": 48,
+      "user": "zhengjianyu",
+      "start_idx": 21,
+      "end_idx": 25
+    },
+    {
+      "id": 49,
+      "user": "fffan",
+      "start_idx": 16,
+      "end_idx": 20
+    },
+    {
+      "id": 50,
+      "user": "徐能",
+      "start_idx": 36,
+      "end_idx": 40
+    },
+    {
+      "id": 51,
+      "user": "007",
+      "start_idx": 26,
+      "end_idx": 30
+    },
+    {
+      "id": 52,
+      "user": "孙玉友",
+      "start_idx": 26,
+      "end_idx": 30
+    },
+    {
+      "id": 53,
+      "user": "wdj",
+      "start_idx": 1,
+      "end_idx": 5
+    },
+    {
+      "id": 54,
+      "user": "老吴",
+      "start_idx": 16,
+      "end_idx": 20
+    },
+    {
+      "id": 55,
+      "user": "wang",
+      "start_idx": 36,
+      "end_idx": 40
+    },
+    {
+      "id": 56,
+      "user": "吴人可敌",
+      "start_idx": 6,
+      "end_idx": 10
+    },
+    {
+      "id": 57,
+      "user": "三剑客",
+      "start_idx": 21,
+      "end_idx": 25
+    },
+    {
+      "id": 58,
+      "user": "刘小康",
+      "start_idx": 11,
+      "end_idx": 15
+    },
+    {
+      "id": 59,
+      "user": "yates",
+      "start_idx": 41,
+      "end_idx": 45
+    },
+    {
+      "id": 60,
+      "user": "lsz",
+      "start_idx": 31,
+      "end_idx": 35
+    },
+    {
+      "id": 61,
+      "user": "Test64",
+      "start_idx": 46,
+      "end_idx": 50
+    },
+    {
+      "id": 62,
+      "user": "helenxu",
+      "start_idx": 1,
+      "end_idx": 5
+    },
+    {
+      "id": 63,
+      "user": "li",
+      "start_idx": 26,
+      "end_idx": 30
+    },
+    {
+      "id": 64,
+      "user": "js",
+      "start_idx": 36,
+      "end_idx": 40
+    },
+    {
+      "id": 65,
+      "user": "Wang",
+      "start_idx": 21,
+      "end_idx": 25
+    },
+    {
+      "id": 66,
+      "user": "JPX",
+      "start_idx": 41,
+      "end_idx": 45
+    },
+    {
+      "id": 67,
+      "user": "LinYe",
+      "start_idx": 16,
+      "end_idx": 20
+    },
+    {
+      "id": 68,
+      "user": "胡欣硕",
+      "start_idx": 11,
+      "end_idx": 15
+    },
+    {
+      "id": 69,
+      "user": "姚旺",
+      "start_idx": 6,
+      "end_idx": 10
+    },
+    {
+      "id": 70,
+      "user": "LiXin",
+      "start_idx": 31,
+      "end_idx": 35
+    },
+    {
+      "id": 71,
+      "user": "ppsunrise",
+      "start_idx": 46,
+      "end_idx": 50
+    },
+    {
+      "id": 72,
+      "user": "YW",
+      "start_idx": 41,
+      "end_idx": 45
+    },
+    {
+      "id": 73,
+      "user": "riverfly",
+      "start_idx": 31,
+      "end_idx": 35
+    },
+    {
+      "id": 74,
+      "user": "lyj",
+      "start_idx": 46,
+      "end_idx": 50
+    },
+    {
+      "id": 75,
+      "user": "ii",
+      "start_idx": 1,
+      "end_idx": 5
+    },
+    {
+      "id": 76,
+      "user": "李健",
+      "start_idx": 16,
+      "end_idx": 20
+    },
+    {
+      "id": 77,
+      "user": "l p",
+      "start_idx": 26,
+      "end_idx": 30
+    },
+    {
+      "id": 78,
+      "user": "QQX",
+      "start_idx": 11,
+      "end_idx": 15
+    },
+    {
+      "id": 79,
+      "user": "Tianlin",
+      "start_idx": 21,
+      "end_idx": 25
+    },
+    {
+      "id": 80,
+      "user": "lby",
+      "start_idx": 6,
+      "end_idx": 10
+    },
+    {
+      "id": 81,
+      "user": "cleveres",
+      "start_idx": 36,
+      "end_idx": 40
+    }
+  ]
+}
