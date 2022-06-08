@@ -48,7 +48,7 @@ T5-small：https://huggingface.co/imxly/t5-pegasus-small
 
 T5：https://huggingface.co/imxly/t5-pegasus
 
-UNILM：https://huggingface.co/peterchou/unilm-chinese-base
+UNILM：https://github.com/YunwenTechnology/Unilm
 
 ZhouWenWang：https://huggingface.co/IDEA-CCNL/Zhouwenwang-Unified-1.3B
 
