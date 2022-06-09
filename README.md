@@ -8,71 +8,78 @@
 
 ------
 
+
+
 [TOC]
 
 ------
+#### Quick Start：
+
+Coming Soon...
+
+We are encapsulating some of the trained models into docker images, so that most friends can quickly use them to try crosstalk generation.
 
 
+#### Data Description：
 
-#### 数据描述：
+The data is divided into two parts: initial data and training data.
 
-数据分为初始数据及训练数据两个部分.
-
-**初始数据**：包含从网上爬取下来的小品，单口，双口，群口相声，后续会开源，目前仅开源meta.json。
+**initial data**：Including sketches crawled from the Internet, single performing, dual performing, group performing and Ketch comedy .
 
 
 
 ```
 src/
 ----common_data/
---------meta.json           全数据的元数据
+--------meta.json                    metadata for full data
+--------CompleteMetaExportData.zip   full data
 
 ```
 
 
 
-| 篇章统计                                     | 数值 |
+| Type                                     | Number |
 | -------------------------------------------- | ---- |
-| 单口相声数量                                 | 168  |
-| 对口相声数量                                 | 3685 |
-| 群口相声数量                                 | 256  |
-| 小品数量                                     | 5222 |
-| 纯对话文本数量(包括对口，群口，纯对话的小品) | 4859 |
-| 全文本数量                                   | 9331 |
+| single performing                                 | 168  |
+| dual performing                                 | 3685 |
+| group performing                                 | 256  |
+| Ketch comedy                                     | 5222 |
+| plain dialogue texts(extract from which text above) | 4859 |
+| full data                                   | 9331 |
 
 
 
-| 数值统计              | 数值     |
+|               | Number     |
 | --------------------- | -------- |
-| 数据集全字数          | 16481376 |
-| 数据集全句数          | 663305   |
-| 长句数（长度大于128） | 8717     |
-| 短句数（长度小于24）  | 446756   |
-| 句长中位数            | 16       |
-| 篇章平均句子数        | 71       |
+| Total words          | 16481376 |
+| Number of utterances          | 663305   |
+| Number of long utterances | 8717     |
+| Number of short utterances   | 446756   |
+| Median word numbers of utterances            | 16       |
+| Mean utterances per script        | 71       |
 
 
 
-**meta格式说明：**
+**metadata format description：**
 
 ```
 {
-		"isAllDialog":true,                                       #是否为纯对话格式
-		"charSize":526,                                           #本篇字数
-		"filePath":"u399dy/蔡少芬李菁相声《学说普通话》台词完整版",     #相对路径
-		"roles":[                                                 #角色
+		"isAllDialog":true,                                       #Whether it is a pure dialogue format
+		"charSize":526,                                           #Word count in this scripts
+		"filePath":"u399dy/蔡少芬李菁相声《学说普通话》台词完整版",     #relative path
+		"roles":[                                                 #roles
 			"李菁:",
 			"蔡少芬:"
 		],
-		"sentenceSize":25,                                        #句子数
-		"source":"https://www.399dy.com/xiangsheng/11176.html",   #来源网站
-		"idx":28,                                                 #索引
-		"title":"蔡少芬李菁相声《学说普通话》台词完整版",               #篇章标题
-		"type":"对口相声"                                          #类型
+		"sentenceSize":25,                                        #utterances size
+		"source":"https://www.399dy.com/xiangsheng/11176.html",   #source
+		"idx":28,                                                 #index
+		"title":"蔡少芬李菁相声《学说普通话》台词完整版",               #title
+		"type":"对口相声"                                          #type
 	},
 ```
 
-**文本内格式实例：**
+**In-text formatting example：**
 
 ```
 甲:现在的商业都讲究实事求是，公约上写着:“百问不烦，百拿不厌。”
@@ -98,42 +105,42 @@ src/
 
 
 
-**训练数据**：从初始数据中清洗筛选出的2948篇对口相声，验证集为从初始数据中筛选出的368篇对口相声，测试集为从初始数据中筛选出的50篇对口相声中的10轮对话。已在项目中开放。(src/common_data)
+**Train data**：The 2948 dialogues were cleaned and screened from the initial data, the validation set was 368 dialogues selected from the initial data, and the test set was 10 rounds of dialogue among the 50 dialogues selected from the initial data.Opened in project.(src/common_data)
 
 
 
 ```
 src/
 ----common_data/
---------train_raw.zip           原始格式的训练语料（包含元信息）
---------dev_raw.zip             原始格式的验证语料（包含元信息）
---------train_pure_text.txt     纯文本格式的训练语料
---------dev_pure_text.txt       纯文本格式的验证语料
---------test_filter_50x20.txt   测试语料（机器指标计算及人工评价都基于该数据）
+--------train_raw.zip           training corpus in original format（Contains meta information）
+--------dev_raw.zip             Verification corpus in original format（Contains meta information）
+--------train_pure_text.txt     Training corpus in plain text format
+--------dev_pure_text.txt       Verification corpus in plain text format
+--------test_filter_50x20.txt   test corpus（Machine index calculation and manual evaluation are based on this data）
 ```
 
 
 
 
-| （训练数据） | 篇数 | 句数   | 字数    |
+| （data） | Number of scripts | number of utterances   | word count    |
 | ------------ | ---- | ------ | ------- |
-| 训练集       | 2948 | 173194 | 3184664 |
-| 验证集       | 368  | 41482  | 905201  |
-| 测试集       | 50   | 1000   | 19268   |
+| Training corpus       | 2948 | 173194 | 3184664 |
+| Verification       | 368  | 41482  | 905201  |
+| test corpus       | 50   | 1000   | 19268   |
 
 
 ------
 
 
-#### 模型描述：
+#### Model description：
 
-finetune的模型有：
+finetune：
 
 GPT,T5,T5-small,unilm,rnn,GPT3
 
 
 
-直接推理使用的大模型有：
+zero-shot inference：
 
 CPM-large,GPT3,Pangu-a,zhouwenwang
 
@@ -141,11 +148,11 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 
 
 
-#### 机器指标
+#### Machine Metrics
 
 
 
-机器指标评分所用的数据文件详情和跑分方法详情见 [机器指标](https://github.com/anonNo2/crosstalk-generation/blob/main/eval_data/machine_eval/README.md) 
+For details of the data files and benchmarking methods used for machine index scoring, see [Machine Metrics](https://github.com/anonNo2/crosstalk-generation/blob/main/eval_data/machine_eval/README.md) 
 
 
 
@@ -164,19 +171,19 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 
 
 
-**一些小发现：**
+**some small discoveries：**
 
-1.GPT3-davinci的机器指标显著高于其他任何生成方法。
+1.GPT3-davinci's machine metrics are significantly higher than any other generation method。
 
-2.大多数大模型直接推理的生成显著差于finetune
+2.Most large models zero-shot inference significantly worse direct inference than finetune.
 
-3.GPT3经过finetune后机器指标下降，但是在下面人工评分中，反而会获得更高的得分。（机器指标高的并不一定更符合人类的阅读习惯？）
+3.After GPT3 goes through finetune, the machine index drops, but in the following manual scoring, it will get a higher score.(Higher machine indicators are not necessarily more in line with human reading habits?)
 
 ------
 
 
 
-#### 创新性指标：
+#### innovative indicators：
 
 
 
@@ -199,35 +206,35 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 
 
 
-**一些小发现：**
+**some small discoveries：**
 
-1.周文王，CPM，pangu-a（直接的大模型推理）相对而言具备更高的创新性。
+1.zhouwenwang，CPM，pangu-a（zero-shot inference）is more innovative.
 
-2.finetune模型中，unilm以及T5相对拥有更高的创新性。
+2.In the finetune model, unilm and T5 are relatively more innovative.
 
-3.创新性评估较高的模型，生成往往更为随机，放在人类角度去理解就是存在一些“驴唇不对马嘴”
+3.Models with higher innovative evaluations are often generated more randomly. 
 
 ------
 
 
 
-#### 人工评分指标：
+#### Human Scoring Metrics：
 
-列名括号中的数字为真实数据的人工打分
+The numbers in parentheses of the column names are human scoring of the real data
 
-综合得分和幽默度得分的分数上限为750
+The combined score and humor score are capped at 750
 
-通顺度得分和歧视程度分数上限为150
-
-
-
-人工评分所用的数据文件详情和跑分方法详情见 [人工指标](https://github.com/anonNo2/crosstalk-generation/blob/main/eval_data/human_eval/README.md) 
+Fluency and Discrimination Scores are capped at 150
 
 
 
-测评设计： 此处我们将共10个预训练模型和大模型（不包括T5-small，因为效果不如T5，再加上了原始数据）针对于测试集50个片段的的上10句进行推理下10句，共找到30名性别，职业，年龄，信仰均不同的被试，要求其对模型生成样本进行评分，综合得分和幽默得分为5分制，通顺度与歧视为1分制（是则1，否则0）。
+For details of the data files used for manual scoring and the scoring method, see [manual scoring](https://github.com/anonNo2/crosstalk-generation/blob/main/eval_data/human_eval/README.md) 
 
-| 括号中为真实数据得分-> | 综合得分(528) | 幽默度得分（519） | 通顺度得分(143) | 歧视程度(3) |
+
+
+Test Design： Here we will infer a total of 10 pre-trained models and large models (excluding T5-small, because the effect is not as good as T5, plus the original data) for the first 10 sentences of the 50 segments of the test set to infer the next 10 sentences，A total of 30 subjects with different genders, occupations, ages, and beliefs were found and asked to rate the samples generated by the model. The comprehensive score and humor score were scored on a 5-point scale, and the fluency and discrimination were on a 1-point scale (1 if yes, otherwise 0).
+
+|  | General quality(528) | Humor（519） | Coherence(143) | Ethically-risky flag(3) |
 | ---------------------- | ------------- | ----------------- | --------------- | ----------- |
 | GPT-ep50               | 225           | 256               | 59              | 2           |
 | T5-pesg-ep15           | 270           | 296               | 76              | 7           |
@@ -241,20 +248,20 @@ CPM-large,GPT3,Pangu-a,zhouwenwang
 
 
 
-**一些小发现：**
+**some small discoveries：**
 
-1.GPT3虽然finetune后在上文的机器指标有所下降，但人工评分各维度都范围是第一位。机器指标并不能完全评估生成效果好坏。
+1.Although GPT3's machine indicators have declined after finetune, all dimensions of manual scoring are ranked first.Machine metrics don't fully assess how well a generation works.
 
-2.UNILM及T5这类模型结构生成质量相对于GPT及RNN会有显著的提升。（在人理解及机器评估维度都是）
+2.Compared with GPT and RNN, the generation quality of model structures such as UNILM and T5 will be significantly improved.
 
 ------
 
 
 
-#### 生成示例：
+#### Generate examples：
 
 
-**交互式生成**
+**Interactive generation**
 
 ```
 demo 1:
@@ -305,7 +312,7 @@ chatbot:我叫韩雪松，谢大家听个话
 
 ```
 
-**剧本式生成**
+**script generation**
 
 ```
 demo 1
@@ -381,7 +388,7 @@ demo 3
 
 
 
-####  同context不同模型生成示例
+####  Example of generating different models in the same context
 
 **demo 1**
 
