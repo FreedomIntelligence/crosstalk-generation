@@ -15,9 +15,35 @@
 ------
 #### Quick Start：
 
-Coming Soon...
 
-We are encapsulating some of the trained models into docker images, so that most friends can quickly use them to try crosstalk generation.
+![image-20220417153303002](https://github.com/anonNo2/crosstalk-generation/blob/main/img/container_server.png)
+
+
+| model-type    | docker                   | file(googleDriver) | file(BaiduDriver)                                             |
+| ------- | ----------------------------- | ---------------- | ------------------------------------------------------------ |
+| T5      | anon2010/crosstalk-gen-env:t5 | download             | [download](https://pan.baidu.com/s/1Wv73_Io7OyTUJZbkdDF9Iw?pwd=t8i9) |
+| GPT     | ...                           | ...              | ...                                                          |
+| Pangu-a | ...                           | ...              | ...                                                          |
+| CPM     | ...                           | ...              | ...                                                          |
+
+To be continued...
+
+**Steps for usage：**
+
+```
+1.Download the relevant images and files first
+2.Start the model image, take t5 as an example here
+docker run -dp 32488:8080 --memory=3G -v <MODEL_RES>:/model_res anon2010/crosstalk-gen-env:t5
+3.Access the host port
+
+```
+
+<MODEL_RES> : Model files decompression path
+
+--memory：Specify the maximum memory limit, too small may cause failure to start
+
+
+
 
 
 #### Data Description：
