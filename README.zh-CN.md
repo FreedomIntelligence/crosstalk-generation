@@ -19,7 +19,7 @@
 
 | 模型    | docker镜像                    | 模型介质(谷歌盘) | 模型介质(百度盘)                                             |
 | ------- | ----------------------------- | ---------------- | ------------------------------------------------------------ |
-| T5      | anon2010/crosstalk-gen-env:t5 | 下载             | [下载](https://pan.baidu.com/s/1Wv73_Io7OyTUJZbkdDF9Iw?pwd=t8i9) |
+| T5      | anon2010/crosstalk-gen-env:t5 | [下载](https://drive.google.com/file/d/1XCrhKk1D7CAkeYjYCtwBiRF0kAieEbsr/view?usp=sharing)              | [下载](https://pan.baidu.com/s/1Wv73_Io7OyTUJZbkdDF9Iw?pwd=t8i9) |
 | GPT     | ...                           | ...              | ...                                                          |
 | Pangu-a | ...                           | ...              | ...                                                          |
 | CPM     | ...                           | ...              | ...                                                          |

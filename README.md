@@ -21,7 +21,7 @@
 
 | model-type    | docker                   | file(googleDriver) | file(BaiduDriver)                                             |
 | ------- | ----------------------------- | ---------------- | ------------------------------------------------------------ |
-| T5      | anon2010/crosstalk-gen-env:t5 | download             | [download](https://pan.baidu.com/s/1Wv73_Io7OyTUJZbkdDF9Iw?pwd=t8i9) |
+| T5      | anon2010/crosstalk-gen-env:t5 | [download](https://drive.google.com/file/d/1XCrhKk1D7CAkeYjYCtwBiRF0kAieEbsr/view?usp=sharing)             | [download](https://pan.baidu.com/s/1Wv73_Io7OyTUJZbkdDF9Iw?pwd=t8i9) |
 | GPT     | ...                           | ...              | ...                                                          |
 | Pangu-a | ...                           | ...              | ...                                                          |
 | CPM     | ...                           | ...              | ...                                                          |
