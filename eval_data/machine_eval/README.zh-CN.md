@@ -1,40 +1,40 @@
-# Machine Scoring Details
+# 机器评分详细说明
 
 
 
-#### 1.Machine Scoring Data File Description：
+#### 1.机器评分数据文件说明：
 
 ```
 data:
-|-------gpt3_base_davinci_metric.json							gpt3 davinci Evaluation data
-|-------gpt3_davinci_ft_metric.json               gpt3 davinci finetune Evaluation data
-|-------machine_metric_data_CPM_large.json        CPM large Evaluation data
-|-------machine_metric_data_gpt_ep50.json         GPT finetune Evaluation data
-|-------machine_metric_data_pangu_a.json          pangu-a Evaluation data
-|-------machine_metric_data_smallt5-95.json       small-t5 finetune Evaluation data
-|-------machine_metric_data_unilm.json            UNILM finetune Evaluation data
-|-------machine_metric_data_zhouwenwang.json      zhouwenwang finetune Evaluation data
-|-------machine_metric_t5_pesg_ep15.json          T5-pesg finetune Evaluation data
-|-------rnn_predic.json                            rnn Evaluation data
+|-------gpt3_base_davinci_metric.json							gpt3 davinci评估数据
+|-------gpt3_davinci_ft_metric.json               gpt3 davinci finetune模型评估数据
+|-------machine_metric_data_CPM_large.json        CPM large 评估数据
+|-------machine_metric_data_gpt_ep50.json         GPT模型finetune 评估数据
+|-------machine_metric_data_pangu_a.json          pangu-a 评估数据
+|-------machine_metric_data_smallt5-95.json       small-t5 finetune评估数据
+|-------machine_metric_data_unilm.json            UNILM finetune评估数据
+|-------machine_metric_data_zhouwenwang.json      zhouwenwang finetune评估数据
+|-------machine_metric_t5_pesg_ep15.json          T5-pesg finetune评估数据
+|-------rnn_predic.json                            rnn训练模型评估数据
 ```
 
 #### 2.json结构说明
 
 ```
     {
-        "ori": "是啊，好久不见。不过我听说你最近挺忙的。",         original sentence
-        "gen": "我在哪里,怎么还不来"                           AB-style generating sentences
+        "ori": "是啊，好久不见。不过我听说你最近挺忙的。",         原始句
+        "gen": "我在哪里,怎么还不来"                           AB方式的生成句
     },
 ```
 
-The evaluation data of the machine running points are all generated in the way of AB sentences
+机器跑分的评估数据均使用AB句的方式进行生成
 
 
 
 
 
 
-#### 3.Model source：
+#### 3.模型来源：
 
 GPT3 : https://beta.openai.com/
 
@@ -54,7 +54,7 @@ ZhouWenWang：https://huggingface.co/IDEA-CCNL/Zhouwenwang-Unified-1.3B
 
 
 
-#### 4.Evaluation Metrics：
+#### 4.评估指标：
 
 
 |                    | bleu_1    | bleu_2   | bleu_3   | bleu_4   | gleu     | rouge_1   | rouge_2  | rouge_L   | distinct_1 | distinct_2 |
@@ -70,4 +70,4 @@ ZhouWenWang：https://huggingface.co/IDEA-CCNL/Zhouwenwang-Unified-1.3B
 | Panggu-a           | 6.42      | 2.09     | 0.83     | 0.37     | 1.31     | 7         | 0.75     | 6.14      | 8.25       | 50.98      |
 | zhouwenwang        | 7.33      | 2.26     | 0.9      | 0.4      | 1.81     | 10.41     | 1.01     | 8.61      | 9.72       | **53.53**  |
 
-The data results can be obtained through machine_metrics.py in the same directory
+该数据结果可通过同目录的 machine_metrics.py 得出
