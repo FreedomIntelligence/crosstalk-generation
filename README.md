@@ -4,7 +4,7 @@
 
 :rocket::rocket::rocket::rocket::rocket::rocket:
 
-[中文版](https://github.com/anonNo2/crosstalk-generation/blob/main/README.zh-CN.md)[English](https://github.com/anonNo2/crosstalk-generation)
+[ [中文版](https://github.com/anonNo2/crosstalk-generation/blob/main/README.zh-CN.md) ]  [ [English](https://github.com/anonNo2/crosstalk-generation) ]
 
 :tada: The largest Chinese open source crosstalk dataset so far (collected from the Internet, books, and other open source projects)
 

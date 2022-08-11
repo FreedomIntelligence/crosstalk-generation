@@ -6,7 +6,7 @@
 
 :rocket::rocket::rocket::rocket::rocket::rocket:
 
-[中文版](https://github.com/anonNo2/crosstalk-generation/blob/main/README.zh-CN.md)[English](https://github.com/anonNo2/crosstalk-generation)
+[ [中文版](https://github.com/anonNo2/crosstalk-generation/blob/main/README.zh-CN.md) ]  [ [English](https://github.com/anonNo2/crosstalk-generation) ]
 
 :tada: 目前为止最大的中文开源相声数据集（收集来源为网络、图书、其他开源项目）
 
