@@ -16,16 +16,12 @@ mode_ref_dict = {
     10:"PANGU-a"
     }
 
-
-
-if __name__ == '__main__':
-
+def get_score_map():
     human_eval_scores_file = os.path.join(this_dir,'data','score_records.json')
 
     score_record = json.loads(io.open(human_eval_scores_file, 'r').read())
 
     score_map = {}
-
     for key,records in pd.DataFrame(score_record['RECORDS']).groupby('user'):
         # 只有全部答完的，我们才纳入统计
         if len(records) == 50:
@@ -48,6 +44,13 @@ if __name__ == '__main__':
                         'diss_score':d_score,
                         'comprehensive_score':is_best
                     }
+    return score_map
+
+if __name__ == '__main__':
+
+
+
+    score_map = get_score_map()
 
     for key in score_map.keys():
         val = score_map.get(key)
