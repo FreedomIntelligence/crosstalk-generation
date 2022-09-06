@@ -85,7 +85,7 @@ prompt="0:你好!\n1:最近好久不见了，啊。\n0:是啊，好久不见。�
 
 效果：
 
-![image-20220226115208642](/Users/wuxiangbo/SAVE_DATA/GPT3/img/image-20220226115208642.png)
+![image-20220226115208642](https://github.com/anonNo2/crosstalk-generation/blob/main/img/image-20220226115208642.png)
 
 
 
@@ -104,7 +104,7 @@ prompt="0:你好!\n1:最近好久不见了，啊。\n0:是啊，好久不见。�
 
 效果：
 
-![image-20220226113939658](/Users/wuxiangbo/SAVE_DATA/GPT3/img/image-20220226113939658.png)
+![image-20220226113939658](https://github.com/anonNo2/crosstalk-generation/blob/main/img/image-20220226113939658.png)
 
 
 
@@ -121,7 +121,7 @@ prompt="0:你好!\n1:最近好久不见了，啊。\n0:是啊，好久不见。�
 
 效果：
 
-![image-20220226114513980](/Users/wuxiangbo/SAVE_DATA/GPT3/img/image-20220226114513980.png)
+![image-20220226114513980](https://github.com/anonNo2/crosstalk-generation/blob/main/img/image-20220226114513980.png)
 
 
 
